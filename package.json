@@ -2,7 +2,12 @@
   "name": "rounding-ladder",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/rounding-ladder.js",
+  "main": "dist/src/index.js",
+  "module": "dist/src/index.esm.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "format": "prettier --write src/ tests/",
     "build": "tsc",
@@ -31,11 +36,7 @@
     "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
     "moduleFileExtensions": [
       "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
+      "js"
     ],
     "clearMocks": true
   }

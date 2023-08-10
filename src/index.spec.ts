@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals'
-import Rounder, { BANKERS_ROUNDING } from '../src/rounding-ladder'
+import Rounder, { BANKERS_ROUNDING } from './index'
 
 describe('rounding ladder', () => {
 	const decade = [10, 11, 13, 15, 17, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90]
