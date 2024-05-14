@@ -1,3 +1,9 @@
+/**
+ * A rounding strategy is a function that takes an amount and two adjacent steps in a ladder that
+ * form a closed interval which includes the amount, as well as an index that represents the position
+ * of the interval in the ladder. The function should return one of the two steps, which will be the
+ * rounded value.
+ */
 type RoundingStrategy = (amount: number, stepBelow: number, stepAbove: number, index: number) => number;
 /**
  * Always round towards plus infinity
